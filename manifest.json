@@ -1,0 +1,16 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "dgapod2025-create.github",
+  "orientation": "portrait",
+  "scope": "/dgap-brownie-pos/",
+  "short_name": "dgapod2025-create.github",
+  "start_url": "/dgap-brownie-pos/index.html",
+  "theme_color": "#ffffff",
+  "lang": "en",
+  "prefer_related_applications": true,
+  "categories": [
+    "food"
+  ]
+}
