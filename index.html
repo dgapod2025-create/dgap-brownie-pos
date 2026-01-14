@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brownie Shop - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  	
+<header class="site-header">
+    <div class="brand">
+        <img src="assets/logo.png" alt="DGAP Brownie Delight Logo" class="logo">
+        <h1>DGAP Brownie Delight</h1>
+    </div>
+    <nav>
+        <a href="index.html">Menu</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+</header>
+	
+
+    <main>
+        <div class="menu-section">
+            <h2>Our Menu</h2>
+            <div id="menu-grid" class="menu-grid">
+                <!-- Menu items will be dynamically loaded here -->
+            </div>
+        </div>
+
+        <div class="cart-section">
+            <h2>Cart</h2>
+            <div id="cart-items" class="cart-items">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total: ₹<span id="cart-total">0</span></strong>
+                </div>
+                <button id="pay-now-btn" class="pay-now-btn" disabled>Pay Now</button>
+                <button id="clear-cart-btn" class="clear-cart-btn" disabled>Clear Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Billing Modal -->
+    <div id="billing-modal" class="modal">
+        <div class="modal-content invoice-container">
+            <span class="close">&times;</span>
+            <div id="invoice-content" class="invoice-content">
+                <!-- Custom invoice will be generated here -->
+            </div>
+            <div class="bill-actions">
+                <button id="print-bill-btn" class="print-btn">Print Invoice</button>
+                <button id="complete-payment-btn" class="complete-btn">Complete Payment & Print</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- QR Code Library -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
